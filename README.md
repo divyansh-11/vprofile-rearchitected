@@ -1,25 +1,39 @@
-# Prerequisites
-#
-- JDK 17 or 21
-- Maven 3.9
-- MySQL 8
+# vprofile-rearchitected
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- Tomcat
-- MySQL
-- Memcached
-- Rabbitmq
-- ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+Re-architecting the vProfile project using AWS services. This project showcases DevOps practices, CI/CD, and AWS infrastructure automation.
 
+---
 
+## Prerequisites
+
+- JDK 17 or 21  
+- Maven 3.9  
+- MySQL 8  
+
+---
+
+## Technologies Used
+
+- Spring MVC  
+- Spring Security  
+- Spring Data JPA  
+- Maven  
+- JSP  
+- Tomcat  
+- MySQL  
+- Memcached  
+- RabbitMQ  
+- Elasticsearch  
+
+---
+
+## Database Setup
+
+We use MySQL as the database. To import the schema:
+
+**SQL dump file:**
+- Located at: `/src/main/resources/db_backup.sql`
+
+**To import:**
+```bash
+mysql -u <user_name> -p accounts < db_backup.sql
